@@ -15,6 +15,14 @@
   if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))
   {
 
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+      
+    }else{
+      var target = document.getElementById("showimage");
+      target.style.display = "none"
+    }
+
 //        window.location.href = "包名://";//ios app协议
       window.setTimeout(function() {
           window.location.href = "https://itunes.apple.com/cn/app/you-bao-zhang/id1134808225?l=en&mt=8";//后跟ios商店id
