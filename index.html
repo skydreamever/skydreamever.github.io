@@ -2,25 +2,29 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>友报账app下载</title>
-    <meta name='apple-itunes-app' content='app-id=1134808225'>
+    <title>this's a demo</title>
+    <meta name='apple-itunes-app' content='app-id=1160663654'>//ios商店id
 </head>
 <body>
+<a href="javascript:;" id="openApp">app下载测试</a>
 </body>
 </html>
 <script type="text/javascript">
-  if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))
-  {
+document.getElementById('openApp').onclick = function(e){
+
+    if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))
+    {
 //        window.location.href = "包名://";//ios app协议
-      window.setTimeout(function() {
-          window.location.href = "https://itunes.apple.com/cn/app/you-bao-zhang/id1134808225?l=en&mt=8";//后跟ios商店id
-      }, 2000)
-  }
-  if(navigator.userAgent.match(/android/i))
-  {
+        window.setTimeout(function() {
+            window.location.href = "https://itunes.apple.com/cn/app/you-bao-zhang/id1134808225?l=en&mt=8";//后跟ios商店id
+        }, 2000)
+    }
+    if(navigator.userAgent.match(/android/i))
+    {
 //        window.location.href = "包名://app";//android app协议
-      window.setTimeout(function() {
-          window.location.href = "http://shouji.baidu.com/software/10503844.html";//android 下载地址
-      }, 2000)
-  }
+        window.setTimeout(function() {
+            window.location.href = "http://shouji.baidu.com/software/10503844.html";//android 下载地址
+        }, 2000)
+    }
+};
 </script>
